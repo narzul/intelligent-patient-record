@@ -27,7 +27,7 @@ module cut()
 //				hole_through(name="M3", l=15, cl=0.1, h=11, hcl=0.4);
 //			translate([79,50,11])rotate([0,180,0])screw("M3x10");
 			translate([80,0,0])cube([150,110,15]);
-//			translate([80,0,15])cube([150,110,6]);
+			translate([80,0,15])cube([150,110,6]);
 //			translate([0,0,22])page();
 //			translate([0,0,11])page2();
 		}

@@ -11,6 +11,23 @@ include <..\nutsnbolts-master\cyl_head_bolt.scad>;
 //Chargerbarrery();*
 $fn=60;
 
+module screw2(p1,p2,p3)
+{
+			#translate([p1,p2,p3])rotate([0,180,0])
+				hole_through(name="M3", l=20, cl=0.1, h=8, hcl=0.4);
+//			#translate([p1,p2,p3])scale([1.1,1.1,1]) nut("M3");
+//			#translate([p1,p2,p3])scale([1.1,1.1,1]) nut("M3");
+//			#translate([p1,p2,21])scale([1,1,1]) nut("M3");
+}
+module nut2(p1,p2,p3)
+{
+//			#translate([p1,p2,-3])rotate([0,180,0])
+//				hole_through(name="M3", l=20, cl=0.1, h=8, hcl=0.4);
+			#translate([p1,p2,p3])scale([1.1,1.1,1]) nut("M3");
+			#translate([p1,p2,p3])scale([1.1,1.1,1]) nut("M3");
+//			#translate([p1,p2,21])scale([1,1,1]) nut("M3");
+}
+
 module nutscrew(p1,p2)
 {
 			#translate([p1,p2,-3])rotate([0,180,0])
@@ -19,20 +36,45 @@ module nutscrew(p1,p2)
 			#translate([p1,p2,22])scale([1.1,1.1,1]) nut("M3");
 //			#translate([p1,p2,21])scale([1,1,1]) nut("M3");
 }
-
+module relate()
+{
+	translate([90,6,3])cube([75,105,16]);
+	translate([90,6,3])cube([141,62,16]);
+	translate([167,70,3])Tag();
+	translate([228,61.9,4])rotate([0,0,180])Chargerbarrery();
+	translate([90,3,15.001])rotate([270,00,0])Led();
+	translate([235,15,15])cube([5,100,3]);
+	translate([80,15,15])cube([5,100,3]);
+	translate([80,115,15])cube([160,5,3]);
+	nutscrew(85,5);
+	nutscrew(85,110);
+	nutscrew(235,5);
+	nutscrew(235,110);
+}
 module cut()
 {
+		screw2(85,5,-50);
+		screw2(85,110,-50);
+		screw2(235,5,-50);
+		screw2(235,110,-50);
+
+		nut2(85,5,100);
+		nut2(85,110,100);
+		nut2(235,5,100);
+		nut2(235,110,100);
 	difference()
 	{
 		union()
 		{
  			translate([80,0,0])cube([160,120,15]);
-			translate([80,0,15])cube([160,120,6]);
-//			translate([0,0,-27])page();
-//			translate([0,0,10])page2();
+			translate([80,0,45])cube([160,120,6]);
+			translate([0,150,60])page();
+			translate([0,150,16])page2();
 		}
-#		union()
+		#union()
 		{
+			translate([310.1,394.1,60])rotate([0,0,180])#outcut2();
+			translate([0,0,30])relate();
 			nutscrew(85,5);
 			nutscrew(85,110);
 			nutscrew(235,5);

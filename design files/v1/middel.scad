@@ -45,7 +45,7 @@ bufromside = bdfromside*3+rfwitdh+rfwirewidth;
 //tapheight = 3;
 //	translate([0,psizeh,0])cube([tapwidth,tapheight,1]);
 
-module main()
+module middel()
 {
 	cube([1,1,1]);
 	difference() {
@@ -154,4 +154,3 @@ module fillet(r, h) {
 
         }
 }
-projection(cut = true) main();

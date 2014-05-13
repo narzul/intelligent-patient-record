@@ -6,8 +6,6 @@ pagesizew = 244;
 tapsw = 3;
 tapsh = 20;
 z = 3;
-projection(cut)
-page2();
 $fn=60;
 module nutscrew(p1,p2)
 {
