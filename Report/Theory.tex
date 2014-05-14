@@ -1,0 +1,29 @@
+\section{Theory}
+\subsection{Rapid prototyping}
+
+% Sources: \\
+% (1) $books.google.com/books?id=4OYcyiDUpsQC$ \\
+% \cite{efunda} $efunda.com/processes/rapid_prototyping/intro.cfm$ \\
+% (3) $http://en.wikipedia.org/wiki/Fused_deposition_modeling$ \\
+% \cite{slic3r} $http://slic3r.org/$
+% \cite{wiki3D} $http://en.wikipedia.org/wiki/3D_Printing$ \\
+
+Prototyping of a physical product is an age old process that has evolved all the way to today. Up until the emergence of virtual prototyping with CAD applications, prototyping was manual, and tended to be craft-based, thus very slow \cite{chua2010}. \\
+In the 1980s, virtual prototyping became more widespread, as computer tools became more mature. Virtual models could now be analysed and modified as if they were physical prototypes, and several iterations of designs could be easily carried out. But as the prototypes became more complex, the time required to make a physical model increased, and therefore craft-based production of a physical prototype became tedious \cite{chua2010}. \\
+
+A new type of prototyping has therefore emerged in the 1980s, called rapid prototyping (RP). Rapid Prototyping can be defined as techniques used to quickly fabricate a scale model of a part or assembly, using three-dimensional computer aided design (CAD). \\
+
+Rapid Prototyping has also been referred to as solid free-form manufacturing, computer automated manufacturing, and layered manufacturing \cite{efunda}. An RP model's most used scenario is for testing various qualities of a physical product, and in some cases, the RP part can be the final part, but typically the RP material is not strong or accurate enough. \\
+
+There exists many experimental RP techniques such as Stereolithography (SLA), Digital Light Processing (DLP), Laminated Object Manufacturing (LOM), Electron Beam Freeform Fabrication (EBF3), Fused Deposition Modelling (FDM), and more \cite{wiki3D}. The latter was specifically used in this project, because of its almost ubiquitous presence in universities, fab-labs, and hackerspaces. \\
+
+The main reasons for using Rapid Prototyping are very compelling. It decreases costly mistakes and engineering changes, thus minimizing development time. By being able to have a look at the product early in the design process, mistakes can be corrected, and changes can be made while they are still inexpensive. \\
+
+Rapid prototyping can be performed in many different ways, but they all adopt the same basic methodology:
+
+\begin{itemize} \itemsep0em
+  \item A virtual model is designed in a CAD application.  It represents the part that is physically built as an enclosed volume, and will specify the inside, the outside, and boundaries of the model.
+  \item The model to be built is next converted into an STL (Stereo Lithography) file format. The STL format approximates the surfaces of the model by polygons.
+  \item A program analyses the STL file, and ``slices'' the model into cross-sections. It generates paths to be filled and calculates the amount of material to be extruded, in the case of a 3D printer that uses fused deposition modelling \cite{slic3r}. In short, it converts a digital 3D model into printing instructions for a 3D printer.
+  \item The model and any supports are removed. The surface of the model is then finished and cleaned for imperfections \cite{efunda}.
+\end{itemize}
