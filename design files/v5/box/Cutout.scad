@@ -1,6 +1,5 @@
 include <component.scad>;
 include <..\page\page.scad>;
-include <..\page\page2.scad>;
 include <..\page\triangle.scad>;
 include <..\nutsnbolts-master\cyl_head_bolt.scad>;
 //Antenna();*
@@ -10,12 +9,22 @@ include <..\nutsnbolts-master\cyl_head_bolt.scad>;
 //Battery();*
 //Chargerbarrery();*
 $fn=60;
+//13
+module screw2(p1,p2,p3)
+{
+			translate([p1,p2,p3])rotate([0,0,0])
+				hole_through(name="M3", l=13, cl=0.1, h=8, hcl=0.4);
+}
+module nut2(p1,p2,p3)
+{
+			#translate([p1,p2,p3])scale([1,1,1.22]) nut("M3");
+}
 
 module nutscrew(p1,p2)
 {
-			#translate([p1,p2,-1])rotate([0,180,0])
-				hole_through(name="M3", l=13, cl=0.1, h=8, hcl=0.4);
-			#translate([p1,p2,21])scale([1,1,1.22]) nut("M3");
+			translate([p1,p2,40])rotate([0,0,0])
+				hole_through(name="M3", l=40, cl=0.1, h=8, hcl=0.4);
+			translate([p1,p2,21])scale([1,1,10.22]) nut("M3");
 }
 module cut()
 {
@@ -23,21 +32,35 @@ module cut()
 	{
 		union()
 		{
-			translate([80,0,0])cube([150,110,15]);
-			translate([80,0,15])cube([150,110,6]);
-//			translate([0,0,22])page();
+			translate([80,0,0])cube([150,110,23]);
+//			translate([80,0,30])cube([150,110,6]);
+			translate([0,0,72])page();
 //			translate([0,0,11])page2();
+			screw2(84,10,150);
+			screw2(84,95,150);
+			screw2(226,10,150);
+			screw2(226,95,150);
+			nut2(84,10,-60);
+			nut2(84,95,-60);
+			nut2(226,10,-60);
+			nut2(226,95,-60);
 		}
 		union()
 		{
+			translate([0,0,50])nutscrew(84,10);
+			translate([0,0,50])nutscrew(84,95);
+			translate([0,0,50])nutscrew(226,10);
+			translate([0,0,50])nutscrew(226,95);
+
 			nutscrew(84,10);
 			nutscrew(84,95);
 			nutscrew(226,10);
 			nutscrew(226,95);
-			nutscrew(200,95);
-			nutscrew(100,95);
+#			translate([90,5,3])cube([130,100,20]);
+//			nutscrew(200,95);
+//			nutscrew(100,95);
 //			translate([85,10,21]) nut("M3");
-
+/*
 			rotate([0,0,90])translate([3,-138,3])Tag();
 			translate([213,61.9,4])rotate([0,0,180])Chargerbarrery();
 			translate([190,91,17])rotate([0,90,90])Led2();
@@ -61,7 +84,7 @@ module cut()
 //			translate([85,40,15])rotate([0,0,0])triangle();
 			translate([225,0,15])cube([5,120,3]);
 			translate([80,0,15])cube([5,120,3]);
-			translate([80,100,15])cube([150,10,3]);
+			translate([80,100,15])cube([150,10,3]);*/
 		}
 	}
 }

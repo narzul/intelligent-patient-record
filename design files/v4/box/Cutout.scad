@@ -14,13 +14,21 @@ module cut()
 	{
 		union()
 		{
-			translate([85,0,0])cube([140,100,15]);
-			translate([85,0,15])cube([140,100,6]);
-			translate([0,0,30])page();
+			translate([85,-200,0])cube([140,100,15]);
+			translate([85,-200,115])cube([140,100,6]);
+			translate([0,0,130])page();
 			translate([0,0,27])page2();
 		}
 		union()
 		{
+			translate([0,-200,0])cc();
+			translate([0,-200,100])cc();
+		}
+	}
+}
+module cc()
+{
+
 			#rotate([0,0,90])translate([3,-138,3])Tag();
 			#translate([213,61.9,4])rotate([0,0,180])Chargerbarrery();
 			#translate([190,81,17])rotate([0,90,90])Led2();
@@ -44,8 +52,6 @@ module cut()
 //			translate([85,40,15])rotate([0,0,0])triangle();
 			translate([225.001,45,15])rotate([0,0,180])triangle();
 			translate([85,45,15])rotate([0,0,270])triangle();
-		}
-	}
 }
 cut();
 //Led();

@@ -4,7 +4,7 @@ tapsw = 3;
 tapsh = 20;
 z = 3;
 //projection(cut)
-page();
+//page();
 module page()
 {
 	difference()
@@ -17,7 +17,7 @@ module dif()
 {
 	union()
 	{
-		#translate([80,0,0])cube([150,110,3]);
+//		#translate([80,0,0])cube([150,110,3]);
 		translate([0,0,0])rotate([0,0,0])#outcut();
 		translate([305,0,-1])rotate([0,0,0])#outcut1();
 		translate([305,239,-1])rotate([0,0,0])#outcut2();
