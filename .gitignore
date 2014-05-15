@@ -8,8 +8,6 @@
 *.toc
 main.pdf
 
-main.pdf
-
 ## Intermediate documents:
 *.dvi
 # these rules might exclude image files for figures etc.
