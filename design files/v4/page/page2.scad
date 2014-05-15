@@ -5,8 +5,6 @@ pagesizew = 244;
 tapsw = 3;
 tapsh = 20;
 z = 3;
-projection(cut)
-page2();
 module page2()
 {
 	mod2();

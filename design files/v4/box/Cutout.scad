@@ -14,10 +14,10 @@ module cut()
 	{
 		union()
 		{
-//			translate([85,0,0])cube([140,100,15]);
+			translate([85,0,0])cube([140,100,15]);
 			translate([85,0,15])cube([140,100,6]);
-//			translate([0,0,30])page();
-//			translate([0,0,27])page2();
+			translate([0,0,30])page();
+			translate([0,0,27])page2();
 		}
 		union()
 		{
