@@ -20,5 +20,4 @@ module side()
 		}
 	}
 }
-
-projection(cut = true)side();
+side();

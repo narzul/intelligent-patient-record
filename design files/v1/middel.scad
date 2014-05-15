@@ -44,7 +44,7 @@ bufromside = bdfromside*3+rfwitdh+rfwirewidth;
 //tapwidth = 20;
 //tapheight = 3;
 //	translate([0,psizeh,0])cube([tapwidth,tapheight,1]);
-
+middel();
 module middel()
 {
 	cube([1,1,1]);
@@ -79,7 +79,7 @@ module highway()
 
 	//from bat
 	translate ([bdfromside+bwith+bdbetween+5,hwfrombotconbat+5,0])cube([hwwidth,140, hwwidth]);
-	translate ([bdfromside+bwith+bdbetween+6,140+hwfrombotconbat+5,0])rotate([0,0,180])cube([21,hwwidth, hwwidth]);
+#	translate ([bdfromside+bwith+(bdbetween+7),140+hwfrombotconbat+5,0])rotate([0,0,180])cube([22,hwwidth, hwwidth]);
 	translate ([bdfromside+bwith+bdbetween+5-23,132+hwfrombotconbat+5,0])cube([hwwidth,25, hwwidth]);
 
 	//ard
@@ -92,8 +92,8 @@ module highway()
 	translate ([20,psizeh-85,0])cube([50,hwwidth, hwwidth]);
 	
 	//cutout
-	translate ([psizew-104,psizeh-178,0])cube([94,168,5]);
-	translate ([12,bdfrombot2+bheight+10,0])cube([97,37,10]);
+#	translate ([psizew-104,psizeh-178,-1])cube([94,168,5]);
+#	translate ([12,bdfrombot2+bheight+10,-1])cube([97,37,10]);
 
 //	#translate ([24,bdfrombot2+bheight,0])cube([10,10,10]);
 //	#translate ([109,bdfrombot2+bheight+47,0])cube([10,10,10]);

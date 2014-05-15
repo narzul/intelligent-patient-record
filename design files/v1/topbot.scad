@@ -145,4 +145,4 @@ module fillet(r, h) {
 
         }
 }
-projection(cut = true) main();
+main();

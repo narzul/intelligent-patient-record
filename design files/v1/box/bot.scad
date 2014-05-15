@@ -27,4 +27,4 @@ module inderside()
 	translate([310,3,0])cube([tapheight,tapwitdh2,1]);
 
 }
-projection(cut = true) inderside();
+inderside();

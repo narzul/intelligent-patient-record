@@ -1,1 +1,0 @@
-import("middel.stl");

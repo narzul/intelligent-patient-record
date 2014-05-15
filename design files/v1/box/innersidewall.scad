@@ -34,4 +34,4 @@ module inderside()
 	translate([-3,10,0])cube([tapheight,tapwitdh,1]);
 	translate([310,10,0])cube([tapheight,tapwitdh,1]);
 }
-projection(cut = true) inderside();
+inderside();
