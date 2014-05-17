@@ -1,10 +1,10 @@
-use<box\bot.scad>;
-use<box\top.scad>;
-use<page\page.scad>;
-use<box\front.scad>;
-use<box\back.scad>;
-use<box\rightside.scad>;
-use<box\leftside.scad>;
+use<box/bot.scad>;
+use<box/top.scad>;
+use<page/page.scad>;
+use<box/front.scad>;
+use<box/back.scad>;
+use<box/rightside.scad>;
+use<box/leftside.scad>;
 rotate([180,270,0])translate([0,0,-100])leftside();
 rotate([180,270,0])translate([0,0,347])rightside();
 translate([0,-28,147])top();

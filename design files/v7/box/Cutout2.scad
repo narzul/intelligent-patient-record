@@ -1,8 +1,8 @@
 include <component2.scad>;
-include <..\page\page.scad>;
-include <..\page\page2.scad>;
-include <..\page\triangle.scad>;
-include <..\nutsnbolts-master\cyl_head_bolt.scad>;
+include <../page/page.scad>;
+include <../page/page2.scad>;
+include <../page/triangle.scad>;
+include <../nutsnbolts-master/cyl_head_bolt.scad>;
 //Antenna();*
 //Arduino();
 //WIFI();

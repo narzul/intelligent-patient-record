@@ -1,7 +1,7 @@
 include <component.scad>;
-include <..\page\page.scad>;
-include <..\page\page2.scad>;
-include <..\page\triangle.scad>;
+include <../page/page.scad>;
+include <../page/page2.scad>;
+include <../page/triangle.scad>;
 //Antenna();*
 //Arduino();
 //WIFI();

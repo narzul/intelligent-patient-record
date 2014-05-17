@@ -1,7 +1,18 @@
 \section{Introduction}
 
 A physical patient record consisting of a folder and papers, has a wide presence in hospitals. It is used daily by doctors and nurses who share it with each other, as each patient has one record bound to them. It has remained physical (as opposed to digital) for many reasons, some of them being that paper holds legal value, and hospitals often rely on a large IT infrastructure that is hard to update and modify, due to legacy software and databases that have become hard to maintain due to their old age. Hospitals have since adopted a double record, consisting of a physical and a digital part. \\
+
 A recent article by Houben et al. proposed an enhancement of such a double record, dubbed the Hybrid Patient Record (HyPR), to resolve configuration problems related to finding, using and managing the physical and digital representation of the patient record. A device prototype was created, to merge the physical and digital patient record
 into one physical enclosure. A study with clinicians pointed toward a will to adopt such device, but the weight, thickness and size were deemed to be a very important factor \cite{hypr}. \\
 
-In this project, an improvement of the physical part of the Hybrid Patient Record is proposed. As the original device by Houben et al. was an early prototype, the design, size and choice of materials were assessed, and modified. With the availability of prototyping tools at the IT University of Copenhagen, such as a laser cutter and 3D printer, the method of rapid prototyping was therefore chosen for developing a new device. Through an iterative process, a series of prototypes were created and evaluated.
+In this project, an improvement of the physical part of the Hybrid Patient Record is proposed. As the original device by Houben et al. was an early prototype, the design, size and choice of materials were assessed, and modified. With the availability of prototyping tools at the IT University of Copenhagen, such as a laser cutter and 3D printer, the method of rapid prototyping was therefore chosen for developing a new device. Through an iterative process, a series of prototypes were created and evaluated. 
+
+\clearpage
+
+\section{Brief description of the features}
+
+The Hybrid Patient Record can enhance a paper based patient record in many ways. It attempts to achieve that, through the addition of a small microcontroller that makes it possible to control LEDs, a small speaker, an RFID reader, and WiFi connectivity. \\
+For instance, the record is often lost or misplaced both inside the ward or in other departments of a hospital \cite{hypr}. The HyPR device is then equipped with an ultrasound tag that broadcasts a unique value, and makes it able to be tracked down to a specific location in the hospital. A small speaker adds an identification sound for the device, and allows it be found if it is lost in a room. \\
+LEDs can show a colour scheme. The colour can, for example, represent a specific nurse, a patient status or simply used in combination with sound to identify a specific device in a stack of patient journals. \\
+An RFID reader reads a tag from a doctor's tablet, so they can quickly access relevant data for the associated patient. \\
+WiFi capability is added in order to be able to for example, change the LED colours, or trigger the speaker.
