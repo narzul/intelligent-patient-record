@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{url}
@@ -11,6 +11,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{placeins}
+\usepackage[toc,page]{appendix}
 
 \setlength\parindent{0pt}
 
@@ -22,7 +23,7 @@ Mathias Schmidt, Thomas Snaidero \\
 Supervisors: \\
 Steven Houben, Mads Frost}
 
-\date{21 May 2014}
+\date{6th of August 2014}
 
 \begin{document}
 
@@ -34,58 +35,25 @@ Steven Houben, Mads Frost}
 
 \input{Introduction.tex}
 
-\input{Design-requirements.tex}
-% Numbered list of product requirements with most important first, least important last.
-
-%\input{Use-case-scenarios.tex}
-% Detailed description of 3 use case scenarios which illustrate:
-% - The user experience
-% - Insight about a specific product feature, or user requirement
-
-%\input{Design-analysis-and-concept-diagrams.tex}
-% Description of issues related to the design of the product:
-% - Description of concepts, requirements and features of the product
-% - Review of motivations for making the design decisions
-% - Indicate the primary features of the design that are the most creative and original
-
-\input{Materials.tex}
-
 \input{Theory.tex}
+
+\input{Design-requirements.tex}
+
+%\input{Materials.tex}
 
 \input{Methods.tex}
 
-\input{Iterations.tex}
-
-% \input{Prototyping-analysis.tex}
-% Discussion of experience in building prototypes during the design process:
-% - Illustration of all the prototyping activities
-% - Discussion of specific areas where the experience of building prototypes affected the design requirements and specifications
-
 \input{Design-specifications.tex}
-% Explanations of how to build the product, including information such as:
-% - System architecture
-% - Drawings and sketches
-% - Parts and supply ordering information
 
-% Design specifications marked for:
-% - Quality
-% - Accuracy
-% - Originality
+%\input{Evaluation.tex}
 
-\input{Evaluation.tex}
+\input{Discussion.tex}
 
 \input{Conclusions.tex}
 
+\input{Appendix.tex}
 
 % \input{test.tex}
-
-
-\clearpage
-
-\bibliographystyle{plain}
-\bibliography{References}
-
-
 
 % \input{Electronic.tex}
 
@@ -93,19 +61,10 @@ Steven Houben, Mads Frost}
 
 % \input{Problems.tex}
 
+\clearpage
 
-
-
-
-
+\bibliographystyle{plain}
+\bibliography{References}
 
 
 \end{document}
-
-
-%-----------------------------------------------
-% Resources
-
-http://www.me.umn.edu/education/undergraduate/writing/How-to-write-a-Design-Report.pdf
-
-http://ocw.mit.edu/courses/sloan-school-of-management/15-783j-product-design-and-development-spring-2006/index.htm

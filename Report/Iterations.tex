@@ -1,10 +1,24 @@
-\section{Iterations}
+\subsection{Iterations}
 
 The following four prototype iterations shown on figure \ref{fig:v1} to \ref{fig:v5}, depict an exploded view of the design on the left, and the physical version on the right. There is one major change in design during the process from prototype two to three, but they have all one thing in common: the journal is meant to be fixed on top of an acrylic sheet. \\
 The first two prototype ideas shown on figures \ref{fig:v1} and \ref{fig:v2} were made entirely with acrylic sheets cut with a laser-cutter, and the two remaining ones, a mix of laser cutting, and 3D printing.
 
-\subsection{First iteration}
-The first prototype on figure \ref{fig:v1} was designed to accommodate eight banks of 4 x 1,5V AAA batteries. Compartments for each electronic component were made to place them on a flat surface, and reduce thickness. A box on the left of the journal was meant to hold LEDs. This design had many flaws however -- the list below describes the various issues.
+\subsubsection{First iteration}
+The first prototype on figure \ref{fig:v1} was designed to accommodate eight banks of 4 x 1,5V AAA batteries. Compartments for each electronic component were made to place them on a flat surface, and reduce thickness. A box on the left of the journal was meant to hold LEDs. 
+
+\begin{figure}[h]
+\setlength{\belowcaptionskip}{-5mm}
+\begin{minipage}[b]{.5\textwidth}
+\includegraphics[width=1.05\textwidth]{figures/iterations/v1.png}
+\end{minipage}
+\begin{minipage}[b]{.5\textwidth}
+\includegraphics[width=1\textwidth]{figures/iterations/v1-photo.jpg}
+\end{minipage}
+\caption{\small {\it {The first prototype idea}}} 
+\label{fig:v1}
+\end{figure}
+
+This design had many flaws however -- the list below describes the various issues.
 
 \begin{itemize} \itemsep0em
   \item It felt heavy, and the weight exceeded 500g.
@@ -24,24 +38,13 @@ A few positive characteristics were observed:
   \item Reduced thickness by 15mm.
 \end{itemize}
 
-
-\begin{figure}[h]
-\begin{minipage}[b]{.5\textwidth}
-\includegraphics[width=1.05\textwidth]{figures/iterations/v1.png}
-\end{minipage}
-\begin{minipage}[b]{.5\textwidth}
-\includegraphics[width=1\textwidth]{figures/iterations/v1-photo.jpg}
-\end{minipage}
-\caption{\small {\it {The first prototype idea}}} 
-\label{fig:v1}
-\end{figure}
-
 % -------------------
 
-\subsection{Second iteration}
+\subsubsection{Second iteration}
 The second prototype took the previous downsides into consideration, and produced the device shown on figure \ref{fig:v2}. The idea here, is that the electronics were to be moved to a box at the bottom of the journal, in order to make the journal feel less bulky while holding it.
 
 \begin{figure}[h]
+\setlength{\belowcaptionskip}{0mm}
 \begin{minipage}[b]{.5\textwidth}
 \includegraphics[width=1.05\textwidth]{figures/iterations/v3.png}
 \end{minipage}
@@ -52,7 +55,7 @@ The second prototype took the previous downsides into consideration, and produce
 \label{fig:v2}
 \end{figure}
 
-Following are the issues found with this design.
+Following are the issues found with this design:
 
 \begin{itemize} \itemsep0em
 	\item Not very pleasant to hold, as the box holding the electronics ended up getting in the way of the user.
@@ -66,12 +69,12 @@ This prototype was discarded before an attempt to place the electronics in the b
 
 % -------------------
 
-\subsection{Third iteration}
+\subsubsection{Third iteration}
 
-Figure \ref{fig:v3} depicts the third prototype. The electronics were moved to a new 3D printed container made of PLA. The latter was further divided into smaller compartments made for housing the various electronic components. The container had a lid that was screwed on top. \\
-The box was also designed to be slid into a sheet of acrylic. Two small protruding triangles where cut in the acrylic sheets in order for them to bend, and the box would then ``click'' into place. The purpose of such system is to make maintainability easier - one would simply have to slide the box out, perform a software update and slide it back in. This was however difficult to get right, and the bending acrylic ended up breaking quickly. Figure \ref{fig:v3} shows the broken acrylic on the right. Two holes on the side were also added to hold an RGB LED, and the other to hold the USB charger intake.
+Figure \ref{fig:v3} depicts the third prototype. The electronics were moved to a new 3D printed container made of PLA. The latter was further divided into smaller compartments made for housing the various electronic components. The container had a lid that was screwed on top.
 
 \begin{figure}[h]
+\setlength{\belowcaptionskip}{0mm}
 \begin{minipage}[b]{.5\textwidth}
 \includegraphics[width=1.05\textwidth]{figures/iterations/v4.png}
 \end{minipage}
@@ -81,6 +84,8 @@ The box was also designed to be slid into a sheet of acrylic. Two small protrudi
 \caption{\small {\it {The third prototype idea}}} 
 \label{fig:v3}
 \end{figure}
+
+The box was also designed to be slid into a sheet of acrylic. Two small protruding triangles where cut in the acrylic sheets in order for them to bend, and the box would then ``click'' into place. The purpose of such system is to make maintainability easier - one would simply have to slide the box out, perform a software update and slide it back in. This was however difficult to get right, and the bending acrylic ended up breaking quickly. Figure \ref{fig:v3} shows the broken acrylic on the right. Two holes on the side were also added to hold an RGB LED, and the other to hold the USB charger intake.
 
 Following are the issues found with this design:
 
@@ -118,11 +123,12 @@ This prototype attempted however to resolve many problems found in the previous 
 
 % -------------------
 
-\subsection{Fourth iteration}
+\subsubsection{Fourth iteration}
 
-The fourth prototype shown on figure \ref{fig:v5} was the last iteration made within the available time constraint. The electronics compartments were removed, in favour of one single room for the Arduino, Wifi module, RFID reader, and the battery, and another room for the ultrasonic tracker. The electronics were now wired on a breadboard, which made the system thinner, and easier to maintain as opposed to single elements wired together. The slide system was also improved, and required no bending acrylic parts - a rail was added to the 3D printed lid, where the acrylic sheet is supposed to slide in. The screws were then tightened, which resulted in tightening the box to the acrylic sheets, thus making it hold on to it. This ensured a way to easily slide the box out, when in need for maintenance. A small hole was added at the bottom, to access the battery charger's battery state button. The PLA chosen for the 3D printing was in this case semi transparent, which allowed to place LEDs behind the material, and see the colours distinctly.
+The fourth prototype shown on figure \ref{fig:v5} was the last iteration made within the available time constraint. The electronics compartments were removed, in favour of one single room for the Arduino, Wifi module, RFID reader, and the battery, and another room for the ultrasonic tracker. 
 
 \begin{figure}[h]
+\setlength{\belowcaptionskip}{-5mm}
 \begin{minipage}[b]{.5\textwidth}
 \includegraphics[width=1.05\textwidth]{figures/iterations/v6.png}
 \end{minipage}
@@ -133,6 +139,8 @@ The fourth prototype shown on figure \ref{fig:v5} was the last iteration made wi
 \label{fig:v5}
 \end{figure}
 
+The electronics were now wired on a breadboard, which made the system thinner, and easier to maintain as opposed to single elements wired together. The slide system was also improved, and required no bending acrylic parts - a rail was added to the 3D printed lid, where the acrylic sheet is supposed to slide in. The screws were then tightened, which resulted in tightening the box to the acrylic sheets, thus making it hold on to it. This ensured a way to easily slide the box out, when in need for maintenance. A small hole was added at the bottom, to access the battery charger's battery state button. The PLA chosen for the 3D printing was in this case semi transparent, which allowed to place LEDs behind the material, and see the colours distinctly.
+
 The previous disadvantages were assessed, resulting in the following additional positive observations:
 
 \begin{itemize} \itemsep0em
@@ -141,37 +149,12 @@ The previous disadvantages were assessed, resulting in the following additional 
   \item The chosen RGB LED's colours were easily discerned.
 \end{itemize}
 
-% -------------------------------------------------------------------------------
-
 \begin{figure}[h]
-  \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{figures/journal-1.jpg}}
+  \setlength{\belowcaptionskip}{-25mm}
+  \centering
+  \makebox[\textwidth][c]{\includegraphics[width=\textwidth]{figures/journal-1.jpg}}
   \caption{\small {\it {The finished Hybrid Patient Record with a paper journal and connected to a charger.}}} 
-  \label{fig:journal-1}
+  \label{fig:journal-1}  
 \end{figure}
-
-\begin{figure}[h]
-  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{figures/explode.png}} %
-  \caption{\small {\it {Exploded view of the prototype.}}} 
-  \label{fig:explode}
-\end{figure}
-
-\begin{figure}[h]
-  \begin{minipage}[b]{.5\textwidth}
-    \includegraphics[width=1\textwidth]{figures/journal-charging.jpg}
-  \end{minipage}
-  \begin{minipage}[b]{.5\textwidth}
-    \includegraphics[width=1\textwidth]{figures/journal-battery.jpg}
-  \end{minipage}
-  \caption{\small {\it {Left: a red LED indicates charging state. Right: a button can be pressed to display battery status.}}} 
-  \label{fig:journal-1}
-\end{figure}
-
-
-\begin{figure}[h]
-  \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{figures/internals.jpg}}
-  \caption{\small {\it {Inside the electronics compartment.}}} 
-  \label{fig:internals}
-\end{figure}
-
 
 \clearpage

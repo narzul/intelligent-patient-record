@@ -1,29 +1,52 @@
-\section{Method / Building process}
+\clearpage
 
-During the creation of a prototype, the method used was applied from the Rapid Prototyping process, and was therefore the same over the iterations. The tools and materials at disposition were the following:
+\section{Materials and methods}
+\subsection{Materials}
 
-\begin{itemize} \itemsep0em
+During the creation of a prototype, the tools and materials at disposition were the following:
+
+\begin{itemize}
 	\item Software:
-		\begin{itemize}
+		\begin{itemize} \itemsep0em
 	  		\item OpenSCAD: software for creating solid 3D CAD objects
   			\item Slic3r: G-code generator for 3D printers
   			\item Inkscape: vector graphics editor
 		\end{itemize}
 
 	\item Hardware:
-		\begin{itemize}
+		\begin{itemize} \itemsep0em
 	  		\item MAXbot 3D printer
 	  		\item Epilog Helix 24 laser cutter
 	  		\item PLA filament for 3D printer
 	  		\item Acrylic sheets for laser cutter
-		\end{itemize}  				
+		\end{itemize}
 \end{itemize}
 
-When taking the requirements into consideration, the first step taken was to draw a rough sketch on paper, before creating a virtual model in a CAD application. Once the overall idea and dimensions were agreed upon, OpenSCAD 
 
-\subsection{Software}
+\subsection{Methods}
+
+This section will describe the application of the steps 2 to 5, shown on figure \ref{fig:eng-design-process}. After the probem had been defined, a brainstorming session was made in order to generate ideas and select a possible solution to the problem. Two main points were discussed, that is, what should the device look like, and what techniques are going to be employed in the building process. \\
+
+When taking the requirements into consideration, the first step taken was to draw a rough sketch on paper, before creating a virtual model in a CAD application. The representation of the first prototype was therefore in the form of a pen and paper sketch, which is defined as offline, low-fidelity, fixed i.e. non-interactive, and rapid, as described in section \ref{section-prototyping}. The sketch saves time and money since it enables creating a good understanding of the product before development of a more high-fidelity prototype. Once the design was agreed upon through the help of the sketch, a physical model was built. Here, the prototype could be described as being high-fidelity, open, and rapid. This type of protyping was used for the four iterations decribed in the next section. \\
+
+For the creation of a high-fidelity physical part, a blend of laser-cutting and 3D printing was used. OpenSCAD was used to draw a 3D model of the prototype. It consisted of two different parts, one for the cutting of acrylic sheets, and the other for 3D printing in PLA. The model destined for laser cutting was exported from OpenSCAD to .DXF file, and imported into Inkscape, in order to export it again in PDF format, as the laser cutter uses that format as input. \\
+
+The last prototype was evaluated using the thinking-aloud method described in section \ref{section-evaluation}. Five separate users were given the prototype shown on figure \ref{fig:journal-1} to hold in their hands, and were asked some questions. The observer asking the questions recorded the user-feedback, and transcribed the results on paper. 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Software}
 
 % For the Design we have used openscad, and steard away from 3d design programs like 3d studio max and blender.
 % The reason is when you design a file in 3d studio max or blender, it might look big, and you may have followede the messurments in the program, you usual have to multiply the figur by a factor of 1000x due to conversion problems. Beside that you can have problems with the node points in the design, some times the design file might lock like all the points that need to be conected are, but when you multiply the figure by a factor or zoom up close, that might not be true, and that can give problems.
